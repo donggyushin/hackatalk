@@ -218,10 +218,7 @@ function Page(props: Props): ReactElement {
             alignItems: 'center',
           }}
         >
-          <TouchableOpacity
-            testID={`remove-${index}`}
-            onPress={(): void => removeFriend(friend)}
-          >
+          <TouchableOpacity onPress={(): void => removeFriend(friend)}>
             <Image
               style={{
                 width: 60,
