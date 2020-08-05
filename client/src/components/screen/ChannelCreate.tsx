@@ -218,15 +218,13 @@ function Page(props: Props): ReactElement {
             alignItems: 'center',
           }}
         >
-          <TouchableOpacity onPress={(): void => removeFriend(friend)}>
-            <Image
-              style={{
-                width: 60,
-                height: 60,
-              }}
-              source={friend.thumbURL ? { uri: friend.thumbURL } : IC_NO_IMAGE}
-            />
-          </TouchableOpacity>
+          <Image
+            style={{
+              width: 60,
+              height: 60,
+            }}
+            source={friend.thumbURL ? { uri: friend.thumbURL } : IC_NO_IMAGE}
+          />
 
           <Text
             numberOfLines={1}
